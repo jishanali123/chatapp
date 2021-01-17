@@ -13,7 +13,7 @@
   "author": "Jishan",
   "license": "ISC",
   "engines": {
-    "node": "4.2.2"
+    "node": "4.7.0"
   },
   "dependencies": {
     "connect-mongodb-session": "2.4.1",
