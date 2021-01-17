@@ -3,7 +3,7 @@ const passport = require('passport');
 const h = require('../helpers');
 const config = require('../config');
 const mongoClient = require('../db');
-const { ObjectId } = require('mongodb');
+const ObjectId = require('mongodb').ObjectId;
 
 module.exports = () => {
   let routes = {
