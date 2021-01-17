@@ -1,3 +1,4 @@
+'use strict'
 const passport = require('passport');
 const LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 const config = require('../config');
