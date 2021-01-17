@@ -56,6 +56,10 @@ span.psw {
   padding-top: 16px;
 }
 
+.userDiv {
+  margin-top: 5px;
+}
+
 /* The Modal (background) */
 .modal {
   display: none;
