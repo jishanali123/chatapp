@@ -6,6 +6,7 @@ if (process.env.NODE_ENV === 'production') {
     dbURI: process.env.dbURI,
     dbName: process.env.dbName,
     sessionCollection: process.env.sessionCollection,
+    sessionSecret: process.env.sessionSecret,
     linkedin: {
       clientID: process.env.clientID,
       clientSecret: process.env.clientSecret,
