@@ -2,7 +2,7 @@ const passport = require('passport');
 const LinkedInStrategy = require('passport-linkedin-oauth2').Strategy;
 const config = require('../config');
 const mongoClient = require('../db');
-const { ObjectId } = require('mongodb');
+const ObjectId = require('mongodb').ObjectID;
 
 module.exports = () => {
 
