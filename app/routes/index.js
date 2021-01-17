@@ -53,7 +53,9 @@ module.exports = () => {
     },
     'post': {
       '/createUser': (req, res, next) => {
-        const { fname, uname, psw } = req.body;
+        const fname = req.body.fname;
+        const uname = req.body.uname;
+        const psw = req.body.psw;
         if (fname && uname && psw) {
           mongoClient.then((client) => {
             const dataBase = client.db('chatapp-db');
@@ -74,7 +76,8 @@ module.exports = () => {
       },
 
       '/userLogin': (req, res, next) => {
-        const { uname, psw } = req.body;
+        const uname = req.body.uname;
+        const psw = req.body.psw;
         if (uname && psw) {
           mongoClient.then((client) => {
             const dataBase = client.db('chatapp-db');
